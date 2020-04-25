@@ -13,3 +13,10 @@ in the project directory. Then type
 `serve -s build`
 
 At this point, the server should be running, with the local address being saved to your clipboard. Paste the address in your browser and you're good to go!
+
+**Screenshots**
+
+Upon loading the page
+![](screenshots/OnLoad.PNG)
+Upon adding many items to the list
+![](screenshots/FullList.PNG)
