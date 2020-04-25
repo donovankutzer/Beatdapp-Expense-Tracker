@@ -1,0 +1,111 @@
+html * {
+    font: 20px Tahoma, Geneva, sans-serif;
+}
+
+.body {
+    position: fixed;
+    width:100%;
+    height: 100%;
+    font: 20px Tahoma, Geneva, sans-serif;
+}
+
+.button {
+    border: 2px solid #5D737E;
+    color: black;
+    font: courier;
+    display: inline-flex;
+    margin: 10px;
+    padding: 1px 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover{
+    background-color: #5D737E;
+}
+
+.user-input {
+    position: relative;
+    height: 20%;
+    width: 100%;
+    background: #639A88;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+
+    /* Used for adding shadow over the expense-list-container */
+    z-index: 1;
+}
+
+.expense-list-container {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background: #d3d4d6;
+    z-index: 0;
+
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.expense-list {
+    bottom: 0%;
+    height: 80%;
+    width: 60%;
+
+    margin: 0 auto;
+}
+
+.expense {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid lightslategrey;
+    padding: 10px 10px;
+}
+
+.item {
+    min-width: 25%;
+    padding: 10px 10px;
+    align-self: flex-start;
+}
+
+.mid-item {
+    min-width: 25%;
+    padding: 10px 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+input[type=text]{
+    font-size: 16px;
+    width: 15%;
+    padding: 4px 5px;
+    border: 1px solid #5D737E;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    font-size: 16px;
+    width: 70px;
+    background-color: #DAFFEF;
+    padding: 4px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    color: white;
+    background-color: #5D737E;
+}
+
+label {
+    padding: 10px 40px;
+}
